@@ -4,31 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+    <title>Examen</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <main id="principal">
+        <header id="cabecera">
+            <div id="logo">
+                <h2>LogoTipo</h2>
+            </div>
+            <div id="menuPrincipal">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Universidad</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Aspirantes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <section class="secciones" id="primera">
+            <article class="articulos" id="imagenes">
+                <img src="./img/annie-spratt-QckxruozjRg-unsplash.jpg" alt="estudiantes">
+            </article>
+            <article class="articulos" id="noticias">
+                <h3>Primera Notica</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam ab voluptatum dolorem dolores
+                    quae magni rem dolorum similique, placeat sed vero ullam quos distinctio, dolor ad, suscipit
+                    iure deserunt commodi. Numquam natus soluta pariatur.</p>
+                <a href="#">Seguir leyendo</a>
+                <h3>Segunda Noticia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti soluta porro laudantium!
+                    Voluptatum veniam itaque possimus vitae eum nihil voluptate quasi corrupti at ea sint, ut iste
+                    sequi adipisci eveniet in ipsa, doloremque minus atque nobis ipsam cumque autem nam? Iure porro
+                    libero blanditiis ea quis alias quae ex odit.</p>
+                <a href="#">Seguir leyendo</a>
+                <h3>Tercera Noticia</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur doloremque est excepturi
+                    magni perferendis aut recusandae nesciunt sed quia tempora. Delectus cupiditate quisquam error
+                    dolorem iusto inventore nobis eius maiores, exercitationem sunt autem.
+                </p>
+                <a href="#">Segir leyendo</a>
+            </article>
+            <div class="clear"></div>
+        </section>
+        <section class="secciones" id="segundo">
+            <form action="">
+                <fieldset>
+                    <legend>
+                        Datos del estudiante
+                    </legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Nombre" />
+                    <br />
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Apellido" /><br />
+                    <label for="matricula">Matr&iacute;cula</label>
+                    <input type="text" id="matricula" name="matricula" placeholder="Matr&iacute;cula" /><br />
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo" />
+                    <h3>G&eacute;nero</h3>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="genero" id="hombre" value="hombre">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="genero" id="mujer" value="mujer" />
+                    <label for="otro">Otro</label>
+                    <input type="radio" name="genero" id="otro" value="otro">
+                    <br />
+                    <div class="button">
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer id="pie">
+            <div id="myData">
+                <span>Examen: unidad 2</span><br />
+                <span>Nombre: </span><br />
+                <span>Grupo:</span><br />
+            </div>
+            <div class="copyright">
+                <span>Copyright</span>
+            </div>
+            <div class="clear"></div>
 
-        <div class="row">
-            <div class="col-sm-6 col-md-8">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-            <div class="col">7</div>
-            <div class="col">8</div>
-            <div class="col">9</div>
-            <div class="col">10</div>
-            <div class="col">11</div>
-            <div class="col">12</div>
-        </div>
-    </div>
-    </div>
+        </footer>
+    </main>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
